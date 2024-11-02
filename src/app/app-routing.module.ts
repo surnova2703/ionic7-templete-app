@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { FormsComponent } from './forms/forms.component'
 import { NotesComponent } from './notes/notes.component'
 import { ContactCardComponent } from './contact-card/contact-card.component';
+import { CardEditComponent } from './contact-card/card-edit/card-edit.component';
 import { SettingsComponent } from "./settings/settings.component"
 import { TodoListComponent } from './todo-list/todo-list.component';
 import {LoginPageModule } from "./login/login.module"
@@ -44,6 +45,10 @@ const routes: Routes = [
   {
     path: 'contact-card',
     component: ContactCardComponent
+  },
+  {
+    path: 'contact-edit',
+    component: CardEditComponent
   },
   {
     path: 'deals',
